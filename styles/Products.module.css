@@ -27,6 +27,18 @@
     font-weight: 600;
 }
 
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video > iframe {
+    width: 80%;
+    height: 25rem;
+    margin-top: 1rem;
+}
+
 .medal {
     display: flex;
     width: 40px;
@@ -43,6 +55,10 @@
 
 @media screen and (max-width: 768px) {
     .main_info {
+        width: 100%;
+    }
+
+    .video > iframe {
         width: 100%;
     }
 
