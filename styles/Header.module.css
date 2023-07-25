@@ -1,0 +1,12 @@
+.lang {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.searchinput {
+  width: 30rem;
+  font-size: 12px;
+}
