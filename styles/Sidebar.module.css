@@ -1,0 +1,16 @@
+.list {
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 18rem;
+    margin-top: 1rem;
+}
+
+.list > li {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    cursor: pointer;
+}
