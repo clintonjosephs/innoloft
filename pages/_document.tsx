@@ -5,7 +5,7 @@ class AppDocument extends Document {
     return (
       <Html>
         <Head>
-          <meta name="description" content=" Innoloft is a leading software technology company offering LoftOS, a B2B platform solution to configure digital platforms without coding. Create digital ecosystems, industry marketplaces, and more with our flexible SaaS solution.
+          <meta name="description" content="Innoloft is a leading software technology company offering LoftOS, a B2B platform solution to configure digital platforms without coding. Create digital ecosystems, industry marketplaces, and more with our flexible SaaS solution.
 Keywords: software technology company, B2B platform, LoftOS, digital platforms, customizable platform modules, economic ministries, research organizations, innovation management platforms, software-as-a-service, platform development" />
           <meta name="keywords" content="frontend team, Innoloft, software technology company, core platform, new functionalities, digital ecosystems, industry marketplaces, frontend applications" />
           <meta property="og:locale" content="en_US" />
