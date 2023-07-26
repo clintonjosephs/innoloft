@@ -25,7 +25,6 @@
   ```bash
   - React - Next.js
   - Git (version control)
-  - ESLint (JavaScript linting)
   ```
 
 - Technologies used 
