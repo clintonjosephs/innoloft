@@ -63,7 +63,7 @@ const OfferingDetails: React.FC<OfferingDetailsProps> = ({
       })
     );
   };
-
+ 
   const mainInfoStyles = {
     width: hasUserSection ? '70%' : '100%',
   };
