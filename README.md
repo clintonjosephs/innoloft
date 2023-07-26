@@ -10,8 +10,7 @@
 ### Dashboard with app id as two
 ![screenshot](./public/assets/images/dashboard_with_appid_two.png)
 
-- [Live Demo](https://stock-metrics-clint.netlify.app/)
-- [Presentation Video](https://www.loom.com/share/eba6bdff52dc4a3a805a3a98a7a7064c)
+- [Live Demo](https://dashboardinnosoft.netlify.app/)
 
 > Create a new dashboard with which you will be displaying and editing product information
 
