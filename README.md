@@ -56,8 +56,6 @@ $ cd innoloft
 ```bash
 $ npm install
 $ npm run dev
-$ npm lint #run for linters errors
-$ npm lint:fix #fix linters errors
 ```
 
 #### Open page in browser
