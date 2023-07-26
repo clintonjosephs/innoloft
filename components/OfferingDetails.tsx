@@ -154,7 +154,7 @@ const OfferingDetails: React.FC<OfferingDetailsProps> = ({
           ) : (
             <>
               <h2 className="text-sm font-bold mb-2">{data.name}</h2>
-              <p className="text-gray-600 text-sm">{parse(data.description)}</p>
+              <p className="text-gray-600 text-sm">{stripTags(data.description)}</p>
             </>
           )}
         </div>

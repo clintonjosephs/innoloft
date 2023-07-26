@@ -10,3 +10,9 @@
   width: 30rem;
   font-size: 12px;
 }
+
+.icon {
+    width: '16px';
+    height: '16px';
+    object-fit: contain;
+}

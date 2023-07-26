@@ -28,12 +28,12 @@ const Header: React.FC<{mainColor: string}> = (mainColor) => {
                 </div>
             </div>
             <div className={`${styles.actions} md:flex md:flex-row hidden md:visible`}>
-                <Image src="/assets/images/inno_messenger.png" width={16} height={16} alt="flag" style={{ objectFit: 'contain' }} className='mr-4' />
+               <img src="/assets/images/inno_messenger.png" alt="flag" className={`${styles.icon} mr-4`} />
                 <span className={`${styles.lang} mr-4`}>EN</span>
-                <Image src="/assets/images/inno_accordion-down-light.png" width={16} height={16} alt="flag" style={{ objectFit: 'contain' }} className='mr-4' />
-                <Image src="/assets/images/inno_notifications.png" width={16} height={16} alt="notifications" style={{ objectFit: 'contain' }} className='mr-4' />
-                <Image src="/assets/images/profile_image.png" width={25} height={25} alt="profile_image" style={{ objectFit: 'cover', borderRadius: '50%' }} className='mr-4' />
-                <Image src="/assets/images/inno_accordion-down-light.png" width={16} height={16} alt="flag" style={{ objectFit: 'contain' }} className='mr-4' />
+                <img src="/assets/images/inno_accordion-down-light.png" alt="flag" className={`${styles.icon} mr-4`} />
+                <img src="/assets/images/inno_notifications.png" className={`${styles.icon} mr-4`} alt="flag" />
+                <img src="/assets/images/profile_image.png" width={25} height={25} alt="profile_image" style={{ objectFit: 'cover', borderRadius: '50%' }} className='mr-4' />
+                <img src="/assets/images/inno_accordion-down-light.png" className={`${styles.icon} mr-4`} alt="flag"/>
             </div>
         </div>
       </div>
