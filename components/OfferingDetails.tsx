@@ -65,7 +65,7 @@ const OfferingDetails: React.FC<OfferingDetailsProps> = ({
   };
  
   const mainInfoStyles = {
-    width: hasUserSection ? '70%' : '100%',
+    width: hasUserSection ? '' : '100%',
   };
 
   return (
@@ -160,7 +160,7 @@ const OfferingDetails: React.FC<OfferingDetailsProps> = ({
         </div>
       </div>
       {hasUserSection ? (
-        <div className={`${styles.address} rounded-tr-lg md:w-40 p-4`}>
+        <div className={`${styles.address} rounded-tr-lg p-4`}>
           <div className="w-100">
             <h2 className="text-base font-bold mb-2 text-indigo-900">
               Offered By
