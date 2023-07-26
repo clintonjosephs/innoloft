@@ -2,9 +2,12 @@ import React from 'react';
 import Image from 'next/image';
 import styles from '../styles/Header.module.css';
 
-const Header = () => {
+const Header: React.FC<{mainColor: string}> = (mainColor) => {
+  const styler = {
+    backgroundColor: mainColor.mainColor
+  };
   return (
-    <div className="bg-header-blue w-full flex items-center py-6">
+    <div className='w-full flex items-center py-4' style={styler}>
       <div className="container mx-auto flex-shrink-0 px-4 lg:px-10">
         <div className="flex items-center justify-between">
             <div className={styles.logo}>

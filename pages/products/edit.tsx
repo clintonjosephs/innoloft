@@ -31,6 +31,8 @@ const EditOffer: React.FC<{ apiKey: string; trl: Trl[] }> = ({
   const router = useRouter();
   const data = useSelector((state: RootState) => state.product.data) || undefined;
   const formNameData = useSelector((state: RootState) => state.form) || undefined;
+  const { hasUserSection, mainColor } = useSelector((state: RootState) => state.appSetup) || undefined;
+
   useEffect(() => {
     if (!data) {
       router.push('/');
@@ -61,7 +63,7 @@ const EditOffer: React.FC<{ apiKey: string; trl: Trl[] }> = ({
 
   return (
     <LoadingOverlay active={isSubmitting} spinner text="Updating product offering ...">
-      <Header />
+      <Header mainColor={mainColor || 'bg-header-blue'} />
       <div className="flex md:flex-row md:px-10 container mx-auto flex-shrink-0 px-4 lg:px-10 my-5 w-100">
         <div className="hidden md:block">
           <SideBar />
@@ -77,6 +79,7 @@ const EditOffer: React.FC<{ apiKey: string; trl: Trl[] }> = ({
                 staticMapUrl={staticMapUrl}
                 edit={true}
                 handleSubmit={handleSubmit(onSubmit)}
+                hasUserSection={hasUserSection || true}
               />
             </div>
             <div

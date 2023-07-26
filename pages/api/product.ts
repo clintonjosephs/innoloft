@@ -29,3 +29,12 @@ export const updateProductData = async (id: string, data: any): Promise<any> => 
         console.error(error);
     }
 };
+
+export const fetchAppSetup = async (appid: string): Promise<any> => {
+    try {
+        const appSetup: any = await getRequest(`configuration/${appid}/`).then(data => data.json());
+        return appSetup;
+    } catch (error) {
+        console.error(error);
+    }
+};
