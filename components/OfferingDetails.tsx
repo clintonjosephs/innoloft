@@ -12,8 +12,9 @@ const Editor = dynamic(
   { ssr: false }
 );
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { setformData } from '../redux/product/formDataSlice';
+import { RootState } from '../redux/store';
 
 interface OfferingDetailsProps {
     handleSubmit?: React.MouseEventHandler<HTMLButtonElement> ;
@@ -23,12 +24,10 @@ interface OfferingDetailsProps {
 }
   
 const OfferingDetails: React.FC<OfferingDetailsProps> = ({ data, staticMapUrl, edit, handleSubmit }) => {
-  const initialContent = ContentState.createFromText(
-    stripTags(data.description)
-  );
-  const [editorState, setEditorState] = useState(
-    EditorState.createWithContent(initialContent)
-  );
+   const formNameData = useSelector((state: RootState) => state.form) || undefined;
+   const initialContent = ContentState.createFromText(stripTags(data.description));
+   
+   const [editorState, setEditorState] = useState(EditorState.createWithContent(initialContent));
 
 
   const onEditorStateChange = (editorState: any) => {
@@ -40,7 +39,6 @@ const OfferingDetails: React.FC<OfferingDetailsProps> = ({ data, staticMapUrl, e
 
   const handleNameChange = (event: any) => {
     const { name, value } = event.target;
-    
     if (value.trim().length > 0) {
         dispatchFormUpdate(value)
     }
@@ -96,7 +94,7 @@ const OfferingDetails: React.FC<OfferingDetailsProps> = ({ data, staticMapUrl, e
             <>
               <input
                 type="text"
-                defaultValue={data.name}
+                defaultValue={formNameData.name || ''}
                 placeholder="Offering name"
                 className="mt-2 w-full text-sm rounded border border-gray-300 px-2 py-1 mb-2"
                 onChange={handleNameChange}
