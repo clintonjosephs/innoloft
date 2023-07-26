@@ -1,4 +1,4 @@
-import { getRequest } from "../../helpers/calls";
+import { getRequest, putRequest } from "../../helpers/calls";
 
 export const fetchProductData = async (id: string): Promise<any> => {
     try {
@@ -7,5 +7,25 @@ export const fetchProductData = async (id: string): Promise<any> => {
     } catch (error) {
         console.error(error);
         throw error;
+    }
+};
+
+
+export const fetchTrl = async (): Promise<any> => {
+    try {
+        const trlData: any = await getRequest('trl').then(data => data.json());
+        return trlData;
+    } catch (error) {
+        console.error(error);
+        throw error;
+    }
+};
+
+export const updateProductData = async (id: string, data: any): Promise<any> => {
+    try {
+        const updateData: any = await putRequest(`product/${id}`, data).then(data => data.json());
+        return updateData;
+    } catch (error) {
+        console.error(error);
     }
 };

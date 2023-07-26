@@ -14,4 +14,7 @@ export const convertToEmbedURL = (url: string) => {
     const embedURL = `https://www.youtube.com/embed/${videoID}`;
     return embedURL;
   }
-}
+};
+
+export const getNamesAsString = (array: any) =>
+array.map((item: any) => item.name).join(', ');

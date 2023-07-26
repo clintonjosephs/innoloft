@@ -1,12 +1,11 @@
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 
-export const postRequest = (query: string, data: any) => {
-  return fetch(BASE_URL + query, {
+export const putRequest = (query: string, data: any) => {
+  return fetch(BASE_URL + query + '/', {
     method: 'PUT',
     body: JSON.stringify(data),
     headers: {
-      'Content-Type': 'application/json',
-      Authorization: '',
+      'Content-Type': 'application/json'
     },
   });
 };
@@ -16,6 +15,5 @@ export const getRequest = (query: string) =>
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
-      Authorization: '',
     },
   });
