@@ -10,7 +10,7 @@
 ### Dashboard with app id as two
 ![screenshot](./public/assets/images/dashboard_with_appid_two.png)
 
-- [Live Demo](https://dashboardinnosoft.netlify.app/)
+- [Live Demo](https://dashboardinnoloft.netlify.app/)
 
 > Create a new dashboard with which you will be displaying and editing product information
 
